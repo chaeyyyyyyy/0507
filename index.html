@@ -15,43 +15,77 @@
 	<tltle></tltle>
 
 	<style>
-		header .contain1 {width: 1200px; height: 79.5px; background-color: #a7b6be; margin: 0 auto; position: relative;}	
-		header .contain2 {width: 1200px; height: 50px; position: relative; margin: 0 auto;}
-		header .contain2 ul {width: 60px; height: 50px; position: relative; line-height: 50px; float: left; margin: 0 auto; left: -10px; }
-		header .contain2 ul li {list-style: none; text-align: center; position: relative; font-weight: bold; font-family: 'noto sans KR',sans-serif;}
-		header .contain3 {width: 1200px; height: 30px; position: relative; margin: 0 auto;}
-		header .contain3 ul {width: 1200px; height: 30px; position: relative; line-height: 30px; float: left; margin: 0 auto; left: -10px; }
-		header .contain3 ul li {list-style: none; font-weight: 400; font-size: 13pt; font-family: 'noto sans KR',sans-serif;}
-		body .contain4 {width: 1200px; height: 683px; position: relative; margin: 0 auto; margin-top: 20px;}
-		body .contain4 img {width: 560px; border-radius: 20px; margin-top: 20px; margin-left:80px; position: absolute;}
-		.contain4 .photo1 img {width: 70px; height: 70px; border-radius: 10px; background: pink; position: absolute; margin-left: 0; margin-top: 20px; }
-		.contain4 .photo1 img .pic2 {width: 70px; border-radius: 10px; position: absolute; margin-top: 20px; overflow: hidden; margin: 0 auto; }
-		.contain4 .photo2 img {width: 70px; height: 70px; border-radius: 10px; position: absolute; margin-left: 0; margin-top: 100px; }
-		.contain4 .photo2 img .pic3 {width: 70px; border-radius: 10px; position: absolute; margin-top: 100px; overflow: hidden; margin: 0 auto; }
-		.contain4 .photo3 img {width: 70px; height: 70px; border-radius: 10px; background: pink; position: absolute; margin-left: 0; margin-top: 180px; }
-		.contain4 .photo3 img .pic4 {width: 70px; border-radius: 10px; position: absolute; margin-top: 180px; overflow: hidden; margin: 0 auto; }
-		.contain4 .photo4 img {width: 70px; height: 70px; border-radius: 10px; background: pink; position: absolute; margin-left: 0; margin-top: 260px; }
-		.contain4 .photo4 img .pic5 {width: 70px; border-radius: 10px; position: absolute; margin-top: 260px; overflow: hidden; margin: 0 auto; }
-		.contain4 .photo5 img {width: 70px; height: 70px; border-radius: 10px; background: pink; position: absolute; margin-left: 0; margin-top: 340px; }
-		.contain4 .photo5 img .pic6 {width: 70px; border-radius: 10px; position: absolute; margin-top: 340px; overflow: hidden; margin: 0 auto; }
+		body{margin:0 ; padding :0;}
+		header .contain1 {width: 1920px; height: 79.5px; border-top: #858585 solid 1px; border-bottom: #858585 solid 1px; margin: 0 auto;}	
+
+		.contain2 {width: 1200px; height: 79.5px; margin: 0 auto; position: relative; }
+		.wrapper {width: 33px; height: 33px; position: absolute; margin: 0 auto; top: 20px; cursor: pointer;}
+		.line-wrapper1 {width: 33px; height: 3px; border-radius: 3px; background: black; position: absolute; margin:0 auto; }
+		.line-wrapper2 {width: 33px; height: 3px; border-radius: 3px; background: black; position: absolute; margin:0 auto; top: 15px;}
+		.line-wrapper3 {width: 33px; height: 3px; border-radius: 3px; background: black; position: absolute; margin:0 auto; top: 30px;}
+
+		
+		.contain2 ul {width: 480px; height: 79.5px; position: absolute; margin: 0 auto; padding: 0; margin-left: 60px; font-family: 'noto sans KR',sans-serif; cursor: pointer;}
+		.contain2 ul li {list-style: none; float: left; width: 100px; font-size: 13pt;  line-height: 70px; }
+		.contain2 li:hover {color: #2b80ff;}
+		.contain2 ul li a{font-weight: bold; color: #2b80ff; }
+
+		.contain2 .search {width: 315px; height: 40px; background: #e2e2e2; border-radius: 20px; position: absolute; margin: 0 auto; line-height: 40px; margin-left: 500px; margin-top: 18px;}
+		.contain2 .search a{font-family: 'noto sans KR',sans-serif; font-size: 10pt; color: #939393; margin-left: 5px;}
+		.contain2 .search img  {width: 33px; position: absolute; margin: 0 auto; margin-left: 270px; opacity: 100%; margin-top: 5px;}
+		.contain2 .basket {width: 33px; position: absolute; margin:0 auto; margin-left: 850px; margin-top:20px; cursor: pointer;}
+
+		.contain2 .login {width: 101px; height: 40px; position: absolute; background: #2b80ff; border-radius: 20px; margin: 0 auto; margin-left: 900px; margin-top: 18px; font-family: 'noto sans KR',sans-serif; color: #ffffff; font-size : 10pt; text-align: center; line-height: 40px; cursor: pointer;}
+
+		.contain2 .belogin{width: 103px; height: 79.5px; margin: 0 auto; margin-left:1050px; position: absolute; font-family: 'noto sans KR',sans-serif; font-size:10pt; line-height: 72px; text-align: center; cursor: pointer;}
+	
+		
+		body .contain4 {width: 1200px; height: 683px; position: relative; margin: 0 auto; margin-top: 60px;}
+		.contain4 .pic1 {width: 560px; height: 560px; border-radius: 20px; margin: 0 auto; margin-top: 20px; margin-left:80px; position: absolute;}
+		.contain4 .pic1 img {width: 560px; position: absolute; border-radius: 20px; }
+		.contain4 .photo1 img {width: 70px; height: 70px; border-radius: 10px; background: pink; position: absolute; margin-left: 0; margin-top: 20px; cursor: pointer; }
+		.contain4 .photo1 img .pic2 {width: 70px; border-radius: 10px; position: absolute; margin-top: 20px; overflow: hidden; margin: 0 auto; cursor: pointer; }
+
+		.contain4 .photo2 img {width: 70px; height: 70px; border-radius: 10px; position: absolute; margin-left: 0; margin-top: 100px; cursor: pointer; }
+		.contain4 .photo2 img .pic3 {width: 70px; border-radius: 10px; position: absolute; margin-top: 100px; overflow: hidden; margin: 0 auto; cursor: pointer;}
+		.contain4 .photo3 img {width: 70px; height: 70px; border-radius: 10px; background: pink; position: absolute; margin-left: 0; margin-top: 180px; cursor: pointer;}
+		.contain4 .photo3 img .pic4 {width: 70px; border-radius: 10px; position: absolute; margin-top: 180px; overflow: hidden; margin: 0 auto; cursor: pointer;}
+		.contain4 .photo4 img {width: 70px; height: 70px; border-radius: 10px; background: pink; position: absolute; margin-left: 0; margin-top: 260px; cursor: pointer;}
+		.contain4 .photo4 img .pic5 {width: 70px; border-radius: 10px; position: absolute; margin-top: 260px; overflow: hidden; margin: 0 auto; cursor: pointer;}
+		.contain4 .photo5 img {width: 70px; height: 70px; border-radius: 10px; background: pink; position: absolute; margin-left: 0; margin-top: 340px; cursor: pointer;}
+		.contain4 .photo5 img .pic6 {width: 70px; border-radius: 10px; position: absolute; margin-top: 340px; overflow: hidden; margin: 0 auto; cursor: pointer;}
+
+
 		.contain4 .textcontain1 {width: 426px; height: 540px; position: absolute; margin: 0 auto; margin-top: 20px; margin-left: 680px; }
 		.contain4 .textbox1 {width: 426px; height: 70px; border-bottom: 1px solid #b3b3b3; position: absolute; margin: 0 auto; font-size: 20pt; font-weight: bold; font-family: 'noto sans',sans-serif; line-height: 70px;}
+
 		.contain4 .textbox2 {width: 160px; height: 182px; border-bottom: 1px solid #b3b3b3; position: absolute; margin: 0 auto; font-size: 20pt; font-weight: 400; font-family: 'noto sans',sans-serif; margin-top: 70px; font-size: 13pt; line-height: 60px;}
+		.contain4 .textbox2 span{color: #2b80ff;}
+
 		.contain4 .textbox3 {width: 267px; height: 182px; border-bottom: 1px solid #b3b3b3; position: absolute; margin: 0 auto; margin-left: 160px; font-size: 20pt; font-weight: 400; font-family: 'noto sans',sans-serif;margin-top: 70px; font-size: 13pt; line-height: 60px;}
+		.contain4 .textbox3 span{color: #2b80ff;}
+
 		.contain4 .textbox4 {width: 426px; height: 97px; border-bottom: 1px solid #b3b3b3; position: absolute; margin: 0 auto; margin-top: 260px; font-size: 13pt; font-weight: 400; font-family: 'noto sans',sans-serif; line-height: 20px; }
 		.textbox4 .option {width: 422px; height: 40px; font-size: 11px; background: #e5e5e5; border-radius: 14px; margin-left: 2px; margin-top: 20px; text-align: left; line-height: 40px;}
 		.textbox4 .option a {margin-left: 20px;}
+		.textbox4 .option img {width: 9px; position: absolute; margin-top:8px; margin-left:250px; cursor: pointer;}
+
+
 		.textcontain2 {width: 426px; height: 165px; position: absolute; margin: 0 auto; font-size: 13pt; font-weight: 300; text-align: center; line-height: 77px; margin-top: 380px; font-family: 'noto sans',sans-serif;}
-		.textcontain2 .textbox1 {width: 425px; height: 77px; border:1px solid black;  border-radius: 15px; font-size: 13pt; font-weight: 300; text-align: center; line-height: 77px; margin: 0 auto; }
-		.textcontain2 .textbox2 {width: 205px; height: 65px; border:1px solid black;  border-radius: 15px; font-size: 13pt; font-weight: 300; text-align: center; line-height: 65px; margin-top: 99px; }
-		.textcontain2 .textbox3 {width: 205px; height: 65px; border:1px solid black;  border-radius: 15px; font-size: 13pt; font-weight: 300; text-align: center; line-height: 65px; margin-top: 99px; margin-left: 220px; }
+		.textcontain2 .textbox1 {width: 425px; height: 77px; border:1px solid black;  border-radius: 15px; font-size: 13pt; font-weight: 300; text-align: center; line-height: 77px; margin: 0 auto; cursor: pointer; }
+		.textcontain2 .textbox2 {width: 205px; height: 65px; border:1px solid black;  border-radius: 15px; font-size: 13pt; font-weight: 300; text-align: center; line-height: 65px; margin-top: 99px; cursor: pointer;}
+		.textcontain2 .textbox3 {width: 205px; height: 65px; border:1px solid black;  border-radius: 15px; font-size: 13pt; font-weight: 300; text-align: center; line-height: 65px; margin-top: 99px; margin-left: 220px; cursor: pointer;}
 		.contain5 {width: 1200px; height: 53px; background: #e5e5e5; margin: 0 auto; position: relative;}
 		.contain5 li {list-style: none; float: left; padding-left: 80px; font-size: 15pt; line-height: 53px; font-family: 'noto sans',sans-serif;}
 		.info {font-weight: bold;}
 		.review {font-weight: 400;}
 		.ask {font-weight: 400;}
 		.post {font-weight: 400;}
+
 		.contain5 hr{position: absolute; left: 29px; margin: 0 auto; margin-top:51px; border-radius: 3px;}
+		.contain5 li a:hover {cursor: pointer; font-weight: bold;}
+
+
 		.contain6 {width: 1000px; height: 6965px; position: relative; margin: 0 auto; margin-top: 98px; }
 		
 		.contain6 .imgborder {width: 896px; height: 1202px; border: dashed 5px #763519;  position: absolute; top: 40px; left: 50px; z-index:2; }
@@ -63,7 +97,7 @@
  		.contain6 .textbox4 {width: 1000px; height: 349px; background:#763519; position: relative; top: 1290px; text-align: center; font-size: 48pt; color: #f2d48d; font-weight: 200; }
  		.contain6 .textbox4 .text1 {position: absolute; margin-top:110px; margin-left: 198px;}
  		.contain6 .textbox4 .text1 span {font-weight: bold;}
- 		.contain6 .main2{width: 1000px; overflow: hidden; position: relative; margin: 0 auto; z-index: 1; top:350px; }
+ 		.contain6 .main2{width: 1000px; overflow: hidden; position: relative; margin: 0 auto; z-index: 1; top:349px; }
  		.contain6 .textbox5 {width: 1000px; height: 1257px; position: relative; margin: 0 auto; top: 330px;}
  		.contain6 .textbox5 .maintext1 {font-size: 180pt; color: #f0a762; font-family: 'Rockville Solid', sans-serif; margin-top: 50px; position: absolute; left: 50px;}
  		.contain6 .textbox5 .subtext {font-size: 40pt; color:#000000; font-family: 'noto sans', sans-serif; margin-top: 370px; position: absolute; left: 300px; text-align: left;}
@@ -87,10 +121,15 @@
  		.contain6 .textbox6 .subtext9 {position: absolute; top: 690px; left: 320px; font-size: 20pt; font-family: 'noto sans',sans-serif; color: #ca6f1b; text-align: center; font-weight: 200;}
  		.contain6 .textbox6 .subtext10 {position: absolute; top: 1180px; left: 320px; font-size: 20pt; font-family: 'noto sans',sans-serif; color: #ca6f1b; text-align: center; font-weight: 200;}
  		.contain6 .textbox6 .subtext11 {position: absolute; top: 1780px; left: 320px; font-size: 20pt; font-family: 'noto sans',sans-serif; color: #ca6f1b; text-align: center; font-weight: 200;}
- 		div .viedo {width: 1000px; height: 603px; background: gray; position: relative; top: 6800px; }
+ 		
+ 		iframe {width: 1000px; height: 603px; position: relative; top: 6800px; }
  		div .main4 .mainimg1 {width: 887px; height: 742px; position: relative; top: 6900px; left: 30%; }
- 		div .main4 .mainimg2 {width: 783px;  position: relative; top: 7100px; left: 0; }
- 		.contain7 {width: 1000px; height: 2294.5px; background: pink; position: relative; top: 7300px;}
+ 		div .main4 .mainimg2 img {width: 872px;  position: relative; top: 7100px; left: 0; }
+ 		div .main4 .mainimg3 {width: 1000px; position: relative; top: 7300px; margin: 0 auto;}
+
+
+
+ 		.contain7 {width: 1000px; height: 2294.5px; background: pink; position: relative; top: 7600px;}
  		.contain7 .textbox7 {width: 1000px; height: 394px; background: #f8af62; position: absolute; text-align: center; }
  		.contain7 .textbox7 .text2 {font-family: 'noto sans',sans-serif; color: #fbdd96; font-size: 58pt; line-height: 88px; margin-top: 110px;font-weight: 200;}
  		.contain7 .textbox7 .text2 span {font-weight: bold;}
@@ -107,57 +146,57 @@
  		.contain7 .textbox9 {width: 1000px; height: 349px; background: #fbdd96; position: absolute; text-align: center; margin-top: 350px;}
  		.contain7 .textbox9 .text3 {width: 1000px; font-family: 'noto sans',sans-serif; color: #f8af62; font-size: 58pt; line-height: 88px; top: 100px; font-weight: 200; position: absolute; left: 5px; }
  		.contain7 .textbox9 .text3 span {font-weight: bold;}
- 		div .contain8 {width: 1000px; height: 1995px; position: relative; top: 7500px; margin:0 auto;}
- 		.contain8 .mainimg3 {width: 819px; position: absolute;  left: 500px;}
- 		.contain8 .mainimg4 {width: 1000px; position: absolute; top: 800px; }
- 		.contain9 {width: 1200px; height: 363.5px; position: relative; top: 7500px; background: #a7b6be;}
-
-		pink
-		
-		 
-
-		
-
-
-		 
+ 		div .contain8 {width: 1000px; height: 1995px; position: relative; top: 8000px; margin:0 auto;}
+ 		.contain8 .mainimg3 {width: 819px; position: absolute; }
+ 		.contain8 .mainimg4 {width: 744px; position: absolute; top: 900px; left:256px;}
+ 		footer {width: 1200px; height: 200px; position: relative; top: 8100px; margin: 0 auto; margin: 0; font-family: 'noto sans', sans-serif; font-size: 10pt; }
+ 		footer .footer1 {width: 1920px; height: 100px; border-bottom: #000000 solid 1px; position: absolute; margin: 0 auto;margin-left: -430px; line-height: 100px;}
+ 		footer .footer1 .footer-a {width: 1200px; height: 100px; position: absolute; margin: 0 auto; margin-left:400px; text-align: center; } 
+ 		footer .footer2 {width: 1200px; height: 100px; text-align: center; margin: 0 auto; position: absolute; top: 120px;}	 
 	</style>
 </head>
 <body>
 	<header>
-		<div class="contain1"></div>
-		<div class="contain2">
-			<ul class="menu1">
-				<li class="store home">
-					<a>스토어홈</a>
-				</li>
-			</ul>	
-			<ul class="menu2">
-				<li class="category1">
-					<a>카테고리</a>
-				</li>
-			</ul>
-			<ul class="menu3">
-				<li class="category2">
-					<a>카테고리</a>
-				</li>
-			</ul>
-			<ul class="menu4">
-				<li class="category3">
-					<a>카테고리</a>
-				</li>
-			</ul>
-		</div>	
-		<div class="contain3">
-			<ul class="category1">
-				<li class="list">
-					<a>주방 > 조리도구 > 달고나세트</a>
-				</li>
-			</ul>
-		</div>
+		<div class="contain1">
+			<div class="contain2">
+				<div class="wrapper">
+					<div class="line-wrapper1"></div>
+					<div class="line-wrapper2"></div>
+					<div class="line-wrapper3"></div>
+				</div> 
+				<ul class="menu1">
+					<li class="menu-category">
+						카테고리
+					</li>
+					<li class="store">
+						<a>스토어<a>
+					</li>
+					<li class="menu-contents">
+						컨텐츠
+					</li>
+					<li class="menu-coummnity">
+						커뮤니티
+					</li>
+				</ul>
+
+				<div class="search">
+					<img src="search.png">
+					<a>내 스타일 매거진, 상품, 사진 검색</a>
+				</div>	
+				<img class="basket" src="basket.png">
+				<div class="login">
+					로그인/가입
+				</div>
+				<div class="belogin">
+					비회원주문조회
+				</div>
+			</div>	
 	</header>
 	
 	<div class="contain4">
-		<img class="pic1" src="dalgona1.jpg">
+		<div class="pic1">
+			<img src="dalgona1.jpg" >
+		</div>
 		<div class="photo1">
 			<img class="pic2" src="photo2.jpg">
 		</div>
@@ -176,12 +215,12 @@
 		<div class="textcontain1">
 			<div class="textbox1">[추억의 달고나 만들기] 달고나BOX</div>
 			<div class="textbox2">
-				판매가</br>  
+				<span>판매가</span></br>  
 				상품코드</br>
 				배송비</br>
 			</div>
 			<div class="textbox3">
-				10,000원</br>  
+				<span>10,000원</span></br>  
 				P130399976CE</br>
 				2,500원</br>
 			</div>
@@ -189,6 +228,7 @@
 				<a>옵션</a>
 				<div class="option">
 					  <a>-[필수] 옵션을 선택해주세요-</a>
+					  <img src="click.png">
 				</div>
 			</div>
 			<div class="textcontain2">
@@ -244,10 +284,15 @@
 			<a class="subtext11"><span>Step.03</span><br>설탕을 뿌려둔 밑판 위에<br>달고나를 붓고 누름판으로<br>눌러줍니다</a>
 		</div>
 	</div>
-	<div class="viedo"></div>
+	
+	<iframe width="1000" src="https://www.youtube.com/embed/czF-fFFZW30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
 	<div class="main4">
-		<img class="mainimg1" src="m4.jpg">
-		<img class="mainimg2" src="photo3.jpg">
+		<img class="mainimg1" src="photo3.jpg">
+		<div class="mainimg2">
+			<img class="mainimg2" src="photo7.jpg">
+		</div>
+		<img class="mainimg3" src="photo8.jpg">
 	</div>
 	<div class="contain7">
 		<div class="textbox7">
@@ -278,14 +323,17 @@
 		<img class="mainimg3" src="m5.jpg">
 		<img class="mainimg4" src="photo6.jpg">
 	</div>
-	<div class="contain9"></div>
-	
-
-
-
-
-
 </body>
+<footer>
+	<div class="footer1">
+		<div class="footer-a">ⓒ2020 expber All rights reserved</div>
+	</div>
+	<div class="footer2">
+		PRIVACY POLICY　　　　　　　│　　　　　　　TERMS AND CONDITIONS　　　　　　　│　　　　　　　GET SUBSCRIBED<br><br>
+            이메일 문의　　　│　　　개인정보취급방침　　　│　　　권리 침해 신고　　　│　　　광고　　　│　　　모바일　　　│　　　 앱 설치<br><br><br><br>
+	</div>
+	
+</footer>
 </html>
 
 
